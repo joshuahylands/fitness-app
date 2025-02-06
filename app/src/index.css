@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  @apply bg-neutral-200 text-neutral-950;
+}
+
+.bg-theme {
+  @apply bg-neutral-200;
+}
+
+.bg-card-theme {
+  @apply bg-neutral-300;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-neutral-900 text-neutral-50;
+  }
+
+  .bg-theme {
+    @apply bg-neutral-900;
+  }
+
+  .bg-card-theme {
+    @apply bg-neutral-800;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
